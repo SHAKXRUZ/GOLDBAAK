@@ -1,0 +1,154 @@
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+}
+
+.item_list {
+    list-style-type: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    color: #000000;
+    position: relative;
+
+}
+
+.item_list::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    transition: .5s;
+    bottom: -3px;
+    border-radius: 1px;
+    background: radial-gradient(55.02% 674.98% at 48.31% 50%, #FFCA42 0%, rgba(245, 134, 51, 0) 97.32%);
+    box-shadow: 4px 4px 36.099998474121094px 0px #F89E4480;
+}
+
+.item_list:hover::before {
+    width: 100%;
+    transition: .5s;
+}
+
+.item_link {
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width:900px) {
+    .item_link:first-child {
+        display: none;
+    }
+
+    .header {
+        padding: 0px;
+        align-items: center;
+    }
+
+    .item {
+        gap: 30px;
+    }
+
+    .item_list {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .header_logo {
+        width: 120px;
+    }
+
+}
+
+
+@media only screen and (max-width:700px) {
+    .container {
+        padding: 0px 10px;
+    }
+
+    .item {
+        gap: 20px;
+    }
+
+    .item_list {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .header_logo {
+        width: 100px;
+    }
+}
+
+
+
+@media only screen and (max-width:550px) {
+    .container {
+        padding: 0px 5px;
+    }
+
+    .item {
+        gap: 15px;
+    }
+
+    .item_list {
+        font-size: 14px;
+    }
+
+    .header_logo {
+        width: 80px;
+    }
+}
+
+
+@media only screen and (max-width:450px) {
+
+    .item {
+        gap: 10px;
+    }
+
+    .item_list {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 10px;
+    }
+
+    .header_logo {
+        width: 53px;
+    }
+}
+
+
+@media only screen and (max-width:350px) {
+
+    .item {
+        gap: 8px;
+    }
+
+    .item_list {
+        font-size: 10px;
+        line-height: 9px;
+    }
+
+    .header_logo {
+        width: 50px;
+    }
+}
