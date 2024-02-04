@@ -1,7 +1,18 @@
-import React from "react";
+import { Route } from "react-router-dom";
+import Home from "./home/Home";
+import More from "./more/More";
 
 const Routes = () => {
-  return <div>Routes</div>;
+  return (
+    <>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route path="/more">
+        <More />
+      </Route>
+    </>
+  );
 };
 
 export default Routes;
