@@ -209,6 +209,7 @@
         gap: 30px;
         padding: 50px 100px 0px 100px;
         text-align: center;
+        margin-bottom: 100px;
     }
 
 
@@ -300,6 +301,7 @@
         padding: 50px 0px 0px 0px;
         margin-bottom: 30px;
         text-align: start;
+        margin-bottom: 100px;
     }
 
     .main_title {
@@ -363,6 +365,7 @@
 
     .main {
         flex-direction: column;
+        margin-bottom: 0px;
     }
 
     .main_right_content {
