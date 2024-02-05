@@ -1,0 +1,228 @@
+.footer_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_card_title {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.footer_card_contact {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+}
+
+.footer_card_text {
+    max-width: 75px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.footer_number_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_card_number {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer_card_location_text {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.location_images {
+    width: 148px;
+    height: 113px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 4px solid #FFCA42;
+}
+
+.footer_card_icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 10px;
+}
+
+.footer_icon {
+    font-size: 28px;
+    color: #000000;
+    transition: .5s;
+}
+
+.footer_icon:hover {
+    color: #FFCA42;
+    transition: .5s;
+}
+
+.footer_bottom_text {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+
+.footer_bottom_text_media {
+    display: none;
+}
+
+.footer_left{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+@media only screen and (max-width:1150px) {
+    .footer_bottom_text {
+        display: none;
+    }
+
+    .footer_bottom_text_media {
+        display: block;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .footer_left{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .footer_card_title {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .footer_card_contact {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .footer_left{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0px;
+    }
+    
+    .footer_card_text {
+        max-width: 100%;
+    }
+    
+    
+
+    
+    
+    .footer_icon {
+        font-size: 22px;
+        color: #000000;
+        transition: .5s;
+    }
+    
+    
+    
+    .footer_bottom_text_media {
+        display: none;
+    }
+    
+    .footer_left{
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .footer_content{
+        justify-content: space-between;
+        gap: 50px;
+    }
+}
+
+
+@media only screen and (max-width:550px) {
+
+    .footer_card_contact {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .footer_left{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0px;
+    }
+    
+    .footer_card_text {
+        max-width: 100%;
+    }
+    
+    
+
+    
+    
+    .footer_icon {
+        font-size: 22px;
+        color: #000000;
+        transition: .5s;
+    }
+    
+    
+    
+    .footer_bottom_text_media {
+        display: none;
+    }
+    
+    .footer_left{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .footer_content{
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
