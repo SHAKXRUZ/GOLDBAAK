@@ -1,0 +1,28 @@
+.books_title {
+    margin: 56px 0px 36px 0px;
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 1000px;
+
+}
+
+.books_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* .books_left {
+    display: flex;
+    flex-direction: column;
+} */
+
+.books_images {
+    width: 137px;
+    height: 99.26px;
+}
