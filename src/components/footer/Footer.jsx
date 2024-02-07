@@ -40,7 +40,10 @@ const Footer = () => {
             />
           </Link>
           <div className="footer_card">
-            <img className="footer_logo" src={footerLogo} alt="footer_logo" />
+            <Link to="/">
+              <img className="footer_logo" src={footerLogo} alt="footer_logo" />
+            </Link>
+
             <div className="footer_card_icons">
               <a className="footer_icon" href="/">
                 <PiTelegramLogoBold />

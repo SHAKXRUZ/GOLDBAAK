@@ -1,6 +1,6 @@
 import "./About.css";
-import AboutImages from "../../../assets/images/about_img.png";
-
+import AboutImages from "../../../assets/images/about_images.png";
+import aboutBeforeImages from "../../../assets/images/about_right_before.png";
 const About = () => {
   return (
     <div className="container">
@@ -51,6 +51,12 @@ const About = () => {
             </div>
           </div>
           <div className="about_right_content">
+            <img
+              className="about_images_before"
+              src={aboutBeforeImages}
+              alt="about_images"
+            />
+
             <img
               className="about_images"
               src={AboutImages}
