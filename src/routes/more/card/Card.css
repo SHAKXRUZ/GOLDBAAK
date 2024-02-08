@@ -1,0 +1,132 @@
+.card_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 113px 65px 50px 73px;
+}
+
+.card {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card_images {
+    max-width: 320px;
+    max-height: 320px;
+    text-align: center;
+}
+
+.card_title {
+    max-width: 390px;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: left;
+}
+
+.card_text {
+    max-width: 396px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+
+@media only screen and (max-width:1400px) {
+    .card_content {
+        gap: 10px;
+    }
+
+    .card_title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .card_content {
+        flex-wrap: wrap;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:1150px) {
+    .card_content {
+        flex-wrap: nowrap;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px 50px 0px;
+    }
+
+}
+
+@media only screen and (max-width:1100px) {
+    .card_content {
+        flex-wrap: wrap;
+    }
+    
+    .card_images {
+        max-width: 280px;
+        max-height: 280px;
+    }
+    .card{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card_title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    
+    .card_text {
+        font-size: 18px;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    
+    .card_images {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .card_title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .card_text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+}
+
+@media only screen and (max-width:460px) {
+    .card{
+        gap: 5px;
+    }
+    .card_images {
+        max-width: 181px;
+        max-height: 181px;
+    }
+
+    .card_title {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    
+    .card_text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+}

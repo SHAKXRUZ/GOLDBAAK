@@ -30,11 +30,6 @@ const Book = () => {
           </div>
         </div>
 
-
-
-
-
-
         <div className="book_bottom_content">
           <div className="book_bottom_left">
             <img

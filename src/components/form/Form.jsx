@@ -5,11 +5,11 @@ const Form = () => {
   const sendTeligram = async (e) => {
     e.preventDefault();
     let { ism, tel } = e.target;
-    let chat_id = 792010044;
+    let chat_id = 6610319896;
     let message = "Ismi: " + ism.value + "\nTel: +998" + tel.value;
     console.log(message);
     await fetch(
-      "https://api.telegram.org/bot6717549964:AAHm1LcGwDSqTfZvMkWjwsKEMKYwj5P_sh0/sendMessage",
+      "https://api.telegram.org/bot6470873238:AAF6HAC7bCaDKRylKNTxzNqrWxCOQKIqqzY/sendMessage",
       {
         method: "POST",
         headers: {
@@ -25,7 +25,7 @@ const Form = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data) {
-          alert("Buyurtmangiz qabul qilindi tez orada siz bilan bog'lanamiz!");
+          alert("Malumotlaringiz yuborildi!");
           ism.value = "";
           tel.value = "";
           console.log(data);
@@ -36,7 +36,7 @@ const Form = () => {
   };
   return (
     <div className="container">
-      <form onSubmit={(e) => sendTeligram(e)} id="form">
+      <form className="form" onSubmit={(e) => sendTeligram(e)} id="form">
         <div className="form_div">
           <CiUser className="form_icons" />
           <input

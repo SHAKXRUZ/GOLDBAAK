@@ -1,6 +1,6 @@
 import { Route } from "react-router-dom";
 import Home from "./home/Home";
-// import More from "./more/More";
+import More from "./more/More";
 
 const Routes = () => {
   return (
@@ -8,9 +8,9 @@ const Routes = () => {
       <Route exact path="/">
         <Home />
       </Route>
-      {/* <Route path="/more">
+      <Route path="/more">
         <More />
-      </Route> */}
+      </Route>
     </>
   );
 };
