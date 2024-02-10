@@ -1,11 +1,1 @@
-/* @font-face {
-  font-family: "Regular";
-  src: url("./assets/fonts/Regular.ttf");
-} */
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
+*{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:sans-serif}
