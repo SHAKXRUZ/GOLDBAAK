@@ -1,13 +1,19 @@
 import "./Card.css";
-import card1 from "../../../assets/images/card1.png";
-import card2 from "../../../assets/images/card2.png";
-import card3 from "../../../assets/images/card3.png";
+import card1 from "../../../assets/video/card1.mp4";
+import card2 from "../../../assets/video/card2.mp4";
+import card3 from "../../../assets/video/card3.mp4";
 const Card = () => {
   return (
     <div className="container">
       <div className="card_content">
         <div className="card">
-          <img src={card1} alt="card_images" className="card_images" />
+          <video
+            src={card3}
+            autoPlay
+            loop
+            muted
+            className="card_images"
+          ></video>
           <h2 className="card_title">Xavfsiz to'lov tizimi</h2>
           <p className="card_text">
             Istalgan toʻlov usuli mavjud! To’lovni kitobni qabul qilgandan keyin
@@ -15,7 +21,13 @@ const Card = () => {
           </p>
         </div>
         <div className="card">
-          <img src={card2} alt="card_images" className="card_images" />
+          <video
+            src={card2}
+            autoPlay
+            loop
+            muted
+            className="card_images"
+          ></video>
           <h2 className="card_title">Bepul yetkazib berish</h2>
           <p className="card_text">
             Istalgan toʻlov usuli mavjud! To’lovni kitobni qabul qilgandan keyin
@@ -23,7 +35,13 @@ const Card = () => {
           </p>
         </div>
         <div className="card">
-          <img src={card3} alt="card_images" className="card_images" />
+          <video
+            src={card1}
+            autoPlay
+            loop
+            muted
+            className="card_images"
+          ></video>
           <h2 className="card_title">100% Kafolat</h2>
           <p className="card_text">
             Istalgan toʻlov usuli mavjud! To’lovni kitobni qabul qilgandan keyin

@@ -1,5 +1,5 @@
 import "./About.css";
-import AboutImages from "../../../assets/images/about_images.png";
+import AboutImages from "../../../assets/video/about_images.mp4";
 import aboutBeforeImages from "../../../assets/images/about_right_before.png";
 const About = () => {
   return (
@@ -56,12 +56,13 @@ const About = () => {
               src={aboutBeforeImages}
               alt="about_images"
             />
-
-            <img
-              className="about_images"
+            <video
               src={AboutImages}
-              alt="about_images"
-            />
+              autoPlay
+              muted
+              loop
+              className="about_images"
+            ></video>
           </div>
         </div>
       </div>
